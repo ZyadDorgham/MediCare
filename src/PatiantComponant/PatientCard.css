@@ -1,0 +1,126 @@
+.patient-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 20px;
+    border: 1px solid #e9edf2;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.card-header .patient-avatar {
+    width: 48px;
+    height: 48px;
+}
+
+.card-header .patient-info {
+    flex: 1;
+}
+
+.card-header .patient-name {
+    font-size: 1rem;
+}
+
+.card-header .patient-id {
+    font-size: 0.8rem;
+}
+
+.card-header .status-badge {
+    margin-left: auto;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+}
+
+.card-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.card-row svg {
+    color: #94a3b8;
+    width: 16px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-actions .btn-view,
+.card-actions .btn-delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.card-actions .btn-view {
+    background: none;
+    border: 1px solid #d1d9e6;
+    color: #475569;
+    text-decoration: none;
+}
+
+.card-actions .btn-delete {
+    background: #ffffff;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+}
+
+.card-actions .btn-view:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.card-actions .btn-delete:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .patient-card {
+        padding: 14px;
+    }
+
+    .card-body {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .card-header .status-badge {
+        margin-left: 0;
+    }
+
+    .card-actions {
+        justify-content: stretch;
+    }
+
+    .card-actions .btn-view,
+    .card-actions .btn-delete {
+        flex: 1;
+    }
+}

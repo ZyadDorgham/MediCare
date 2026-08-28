@@ -1,0 +1,79 @@
+.patient-cell {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.btn-view {
+    background: none;
+    border: 1px solid #d1d9e6;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-view:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.btn-view svg {
+    font-size: 14px;
+}
+
+.btn-view:active {
+    transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+    .patient-cell {
+        gap: 10px;
+    }
+
+    .btn-view {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}
+.row-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-delete {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 12px;
+
+    border: 1px solid #fecaca;
+    border-radius: 50px;
+
+    background: #fff;
+    color: #dc2626;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: white;
+}

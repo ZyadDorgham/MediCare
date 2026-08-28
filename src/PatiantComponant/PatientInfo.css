@@ -1,0 +1,22 @@
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.patient-id {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.patient-card .patient-name {
+  font-size: 1rem;
+}
+
+.patient-card .patient-id {
+  font-size: 0.8rem;
+}
